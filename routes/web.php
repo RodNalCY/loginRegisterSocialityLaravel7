@@ -29,3 +29,7 @@ Route::get('socialauth/{provider}/callback', 'Auth\GitHubSocialAuthController@ha
 
 Route::get('/auth/redirect/{provider}', 'Auth\GoogleSocialAuthController@redirectToProvider')->name('login.provider');
 Route::get('/callback/{provider}', 'Auth\GoogleSocialAuthController@handleProviderCallback')->name('login.callback');
+
+
+Route::get('authfacebook/{provider}', 'Auth\FacebookSocialAuthController@redirectToProvider');
+Route::get('authfacebook/{provider}/callback', 'Auth\FacebookSocialAuthController@handleProviderCallback');

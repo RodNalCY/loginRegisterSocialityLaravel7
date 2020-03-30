@@ -75,6 +75,10 @@
                                     <a class="btn btn-link" href="{{ url('/auth/redirect/google') }}">
                                         <i class="fa fa-google fa-3x"></i>
                                      </a>
+
+                                     <a class="btn btn-link" href="{{ url('authfacebook/facebook') }}">
+                                        <i class="fa fa-facebook fa-3x"></i>
+                                     </a>
                             </div>
                         </div>
 
